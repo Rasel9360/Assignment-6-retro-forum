@@ -122,6 +122,7 @@ const searchBtn = () => {
     loadData(inputValue)
 }
 
+// spinning toggle js
 
 const spinningToggleHandler = (isToggle) => {
     const loader = document.getElementById('sining-handler');
@@ -145,8 +146,8 @@ const selectBtn = (title, view) => {
     count++
     const div = document.createElement("div");
     div.innerHTML = `
-        <div class="flex justify-between gap-5 bg-white p-5 rounded-xl">
-                                <h3 class="text-xl font-bold text-[#12132D]">${title}
+        <div class="flex flex-col lg:flex-row justify-between gap-0 lg:gap-5 bg-white p-5 rounded-xl">
+                                <h3 class="text-lg lg:text-xl font-bold text-[#12132D]">${title}
                                 </h3>
                                 <div class="flex justify-center items-center gap-2">
                                     <i class="fa-regular fa-eye"></i>
