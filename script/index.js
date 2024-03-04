@@ -109,7 +109,9 @@ const loadData = async (value) => {
 
     });
 
-    spinningToggleHandler(false);
+    setTimeout(() => {
+        spinningToggleHandler(false);
+    }, 2000);
 }
 
 // search button related js
